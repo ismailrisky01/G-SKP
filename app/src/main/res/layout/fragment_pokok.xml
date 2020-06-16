@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="activity_Action.Realisasi_Fragment.Pokok">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Uraian" />
+            <EditText
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Output" />
+
+            <EditText
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Mutu" />
+
+            <EditText
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Waktu" />
+
+            <EditText
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Biaya" />
+
+            <EditText
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Perhitungan" />
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:background="@drawable/edit_text"
+                    android:id="@+id/editText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:hint="Nilai Capaian" />
+
+                <EditText
+                    android:background="@drawable/edit_text"
+                    android:id="@+id/editText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:ems="10"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:hint="Not Accepted" />
+            </LinearLayout>
+            <Button
+                android:background="@drawable/blue_button"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Simpan" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

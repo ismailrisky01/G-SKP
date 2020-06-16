@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="SKP"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"></TextView>
+        </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+        <Button
+            android:id="@+id/buttonTarget"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/blue_button_gradation"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/ic_trending_up_white_24dp"
+            android:text="Target Skp" />
+        <Button
+            android:id="@+id/buttonRealisasi"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button_gradation"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:text="Relisasi Skp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

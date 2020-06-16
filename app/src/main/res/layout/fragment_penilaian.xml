@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.PenilaianFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_aktivitas"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="60dp"
+        android:background="@drawable/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:id="@+id/toolbar_title_aktivitas"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="PENIlAIAN"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/blue_button_gradation"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtPenetapanTarget"
+                android:layout_width="wrap_content"
+                android:text="Penetapan
+                Target"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imgPenetapanTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/focus_on_target" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/blue_button_gradation"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtPenetapanRealisasi"
+                android:layout_width="wrap_content"
+                android:text="Penilaian
+                Realisasi"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imgPenetapanRealisasi"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/product_manager" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/blue_button_gradation"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtPenetapanAktivitas"
+                android:layout_width="wrap_content"
+                android:text="Penilaian
+                Aktivitas"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imgPenetapanAktivitas"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/thinking" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/blue_button_gradation"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtPenilaianPerilaku"
+                android:layout_width="wrap_content"
+                android:text="Penilaian
+                Perilaku"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imgPenilaianPerilaku"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/startup_2" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

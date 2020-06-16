@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity_Action.Aktivitas_View">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TAMBAH AKTIVITAS"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@color/grey"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#fff"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:id="@+id/form_view_target">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/hitam"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Aktivitas" />
+                <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/garis"
+                    android:layout_below="@id/textView"
+                    android:visibility="visible"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="2dp"
+                    android:background="@color/cardview_shadow_start_color"/>
+                <TextView
+                    android:id="@+id/textViewTanggal"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/garis"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal" />
+                <TextView
+                    android:id="@+id/txtTanggal"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@color/hitam"
+                    android:layout_below="@id/textViewTanggal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Tanggal" />
+                <TextView
+                    android:id="@+id/textViewAktivitas"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/txtTanggal"
+                    android:layout_height="wrap_content"
+                    android:text="Aktivitas" />
+                <TextView
+                    android:id="@+id/txtAktivitas"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/textViewAktivitas"
+                    android:layout_height="wrap_content"
+                    android:text="Aktivitas"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/hitam"/>
+                <TextView
+                    android:id="@+id/textViewOutput"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/txtAktivitas"
+                    android:layout_height="wrap_content"
+                    android:text="Output" />
+                <TextView
+                    android:id="@+id/txtOutput"
+                    android:layout_below="@id/textViewOutput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Output"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/hitam"/>
+                <TextView
+                    android:id="@+id/textViewJamMulai"
+                    android:layout_below="@id/txtOutput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JAM MULAI" />
+                <TextView
+                    android:id="@+id/txtJamMulai"
+                    android:layout_below="@id/textViewJamMulai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JAM MULAI"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/hitam"/>
+                <TextView
+                    android:id="@+id/textViewJamBerakhir"
+                    android:layout_below="@id/txtJamMulai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JAM BERAKHIR" />
+                <TextView
+                    android:id="@+id/txtJamBerakhir"
+                    android:layout_below="@id/textViewJamBerakhir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JAM BERAKHIR"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/hitam"/>
+                <TextView
+                    android:id="@+id/textViewDurasi"
+                    android:layout_below="@id/txtJamBerakhir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DURASI (menit)" />
+                <TextView
+                    android:id="@+id/txtDurasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDurasi"
+                    android:text="DURASI (menit)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/hitam"/>
+                <TextView
+                    android:id="@+id/textViewStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/txtDurasi"
+                    android:layout_height="wrap_content"
+                    android:text="STATUS" />
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_below="@id/textViewStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STATUS"
+                    android:textSize="15dp"
+
+                    android:textColor="@color/hitam"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

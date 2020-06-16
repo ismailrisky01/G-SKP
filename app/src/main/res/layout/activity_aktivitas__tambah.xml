@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_Action.Aktivitas_Tambah">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/form_tambah_target"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/tambah_akt_tanggal"
+            android:background="@drawable/edit_text"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Tanggal"
+            android:focusable="false"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="148dp" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/tambah_akt_idkegiatan"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:hint="Aktivitas"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/tambah_akt_catatan"
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_text"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="15dp"
+
+            android:inputType="textPersonName"
+            android:hint="Catatan" />
+
+        <!--<Spinner-->
+        <!--android:id="@+id/tambah_Relasi"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginBottom="15dp"-->
+        <!--android:layout_height="43dp" />-->
+        <EditText
+            android:id="@+id/tambah_akt_output"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Output" />
+        <!--<EditText-->
+        <!--android:id="@+id/tambah_akt_satuan"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/edit_text"-->
+        <!--android:ems="10"-->
+        <!--android:layout_marginBottom="15dp"-->
+
+        <!--android:inputType="textPersonName"-->
+        <!--android:hint="Satuan" />-->
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/tambah_akt_start"
+                android:background="@drawable/edit_text"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Jam Mulai" />
+            <EditText
+                android:id="@+id/tambah_akt_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Jam Akhir" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:background="@drawable/blue_button"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+
+    </LinearLayout>
+</LinearLayout>

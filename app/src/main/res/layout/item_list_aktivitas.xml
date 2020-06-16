@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="10dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/card_item">
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/log_id"
+            android:text="Nama"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/akt_tanggal"
+            android:gravity="end"
+            android:text="Tanggal"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/log_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/akt_output"
+            android:text="Output"
+            android:layout_below="@+id/akt_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:paddingBottom="10dp"
+
+            android:id="@+id/bk_nama_kegiatan"
+            android:text="Nama_Kegiatan"
+            android:textSize="20sp"
+            android:layout_below="@+id/akt_output"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/akt_start"
+            android:text="Start"
+            android:visibility="gone"
+            android:layout_below="@+id/bk_nama_kegiatan"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/akt_end"
+            android:text="End"
+            android:visibility="gone"
+            android:layout_below="@+id/akt_start"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/akt_waktu"
+            android:text="Waktu"
+            android:visibility="gone"
+            android:layout_below="@+id/akt_end"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+        <TextView
+            android:id="@+id/akt_status"
+            android:text="1"
+            android:layout_below= "@+id/akt_waktu"
+            android:textColor="@android:color/black"
+            android:gravity="end"
+android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/status_xx"
+            android:layout_below="@id/akt_status"
+            android:gravity="end"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@mipmap/ic_x" />
+        <ImageView
+            android:id="@+id/status_vv"
+            android:layout_below="@id/status_xx"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@mipmap/ic_v" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

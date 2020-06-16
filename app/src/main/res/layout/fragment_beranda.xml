@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_beranda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="BERANDA"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"></TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Grafik Capaian" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layout1"
+        android:orientation="vertical"
+        android:background="@drawable/linear"
+        android:layout_below="@+id/tool">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/linear"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_margin="2dp"
+                    android:layout_gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_trending_up_black_24dp" />
+                <ProgressBar
+                    android:id="@+id/progressCapaianT"
+                    android:progress="20"
+                    android:max="100"
+                    style="?android:progressBarStyleHorizontal"
+                    android:indeterminate="false"
+                    android:progressDrawable="@drawable/progressbar_circle_maroon"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capaian Target"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/linear"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imageViewr2"
+                    android:layout_margin="2dp"
+                    android:layout_gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_show_chart_black_24dp" />
+                <ProgressBar
+                    android:id="@+id/progressTarget"
+                    android:progress="20"
+                    android:max="100"
+                    style="?android:progressBarStyleHorizontal"
+                    android:indeterminate="false"
+                    android:progressDrawable="@drawable/progressbar_circle_blue"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capaian Target"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/linear"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imageViw2"
+                    android:layout_margin="2dp"
+                    android:layout_gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_assignment_turned_in_black_24dp" />
+                <ProgressBar
+                    android:id="@+id/progressRealisasi"
+                    android:progress="20"
+                    android:max="100"
+                    style="?android:progressBarStyleHorizontal"
+                    android:indeterminate="false"
+                    android:progressDrawable="@drawable/progressbar_circle_yellow"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capaian Target"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/linear"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imagaaeViw2"
+                    android:layout_margin="2dp"
+                    android:layout_gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_person_outline_black_24dp" />
+                <ProgressBar
+                    android:id="@+id/progressAktivitas"
+                    android:progress="20"
+                    android:max="100"
+                    style="?android:progressBarStyleHorizontal"
+                    android:indeterminate="false"
+                    android:progressDrawable="@drawable/progressbar_circle_green"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capaian Target"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/layout2"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/linear"
+            android:layout_below="@+id/layout1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Capaian AKtivitas Bulan ini" />
+                <ProgressBar
+                    android:id="@+id/target_horizontal"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/progressbar_dark_blue" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/linear"
+        android:layout_below="@+id/layout2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textVieew3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:text="Jumlah Aktivitas Diterima" />
+                <ProgressBar
+                    android:id="@+id/aktivitas_Horizontal"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/progressbar_blue"
+                    android:progress="10"
+                    android:layout_height="30dp"
+                    android:layout_width="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textVieaaew3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="Jumlah Aktivitas Ditolak" />
+                <ProgressBar
+                    android:id="@+id/aktisvitas_Horizontal"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/progrssbar_maroon"
+                    android:progress="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

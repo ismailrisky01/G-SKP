@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.g_skp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".menupenilaian.FragmentPenilaianRealisasi.SetAdapterPenilaianRealisasi"></activity>
+        <activity android:name=".activity_Action.Aktivitas_Tambah" />
+        <activity android:name=".activity_Action.Target_Tambah" />
+        <activity android:name=".menupenilaian.PenilaianPerilaku" />
+        <activity android:name=".menupenilaian.PenilaianAktivitas" />
+        <activity android:name=".menupenilaian.PenilaianRealisasi" />
+        <activity android:name=".menupenilaian.PenetapanTarget" />
+        <activity android:name=".activity_Action.Realisasi_Fragment.SetAdapter" />
+        <activity android:name=".activity_Action.Profile_Action" />
+        <activity android:name=".menu_SKP.Realisasi" />
+        <activity android:name=".menu_SKP.Target" />
+        <activity android:name=".activity_Action.Target_View" />
+        <activity android:name=".activity_Action.Aktivitas_View" />
+        <activity android:name=".activity.DashBoardActivity" />
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

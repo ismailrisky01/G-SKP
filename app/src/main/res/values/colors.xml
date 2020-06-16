@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#248EA9</color>
+    <color name="colorPrimaryDark">#248EA9</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="maroon">#E74C3C</color>
+    <color name="grey">#F8F8F8</color>
+    <color name="blackDonk">#1e272e</color>
+    <color name="hitam">#000000</color>
+    <color name="orange">#f05924</color>
+    <color name="greyLigth">#aaa</color>
+    <color name="grenback">#16a085</color>
+    <color name="greenlight">#009432</color>
+    <color name="green">#009432</color>
+    <color name="text_activity_color">#2d3436</color>
+    <color name="marron_smoth">#EB5F5D</color>
+    <color name="bluesky">#248EA9</color>
+    <color name="greensky">#32BD8E</color>
+    <color name="yellow">#E8CC31</color>
+    <color name="darkblue">#315CBD</color>
+    <color name="greysmooth">#E2E2E2</color>
+</resources>

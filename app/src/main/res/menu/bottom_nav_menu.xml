@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/order"
+        android:icon="@drawable/ic_access_time_black_24dp"
+        android:title="Aktivitas" />
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="SKP" />
+    <item
+        android:id="@+id/penilaian"
+        android:icon="@drawable/ic_check_circle_blue_24dp"
+        android:title="Penilaian" />
+
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/ic_person_pin_black_24dp"
+        android:title="Profile" />
+
+
+</menu>

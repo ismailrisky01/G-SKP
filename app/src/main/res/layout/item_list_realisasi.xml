@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/cardview">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/progressBarRowRealisasi"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:scrollbarStyle="outsideOverlay"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/Ll"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/r_waktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <TextView
+                android:text="Bulan"
+                android:textAlignment="textEnd"
+                android:layout_weight="0" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/Ll2"
+            android:orientation="horizontal"
+            android:layout_below="@id/Ll"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/r_output"
+                android:text="970"
+                android:layout_weight="0"
+                android:textAlignment="textStart"
+                android:layout_below="@+id/uraian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/uraian"
+            android:text="Uraian"
+            android:layout_below="@+id/Ll2"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/id_realisasi"
+            android:text="Id_realisasi"
+            android:visibility="gone"
+            android:layout_below="@id/uraian"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <TextView
+            android:id="@+id/r_mutu"
+            android:text="r_mutu"
+            android:visibility="gone"
+            android:layout_below="@+id/id_realisasi"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/r_biaya"
+            android:text="Satuan Waktu"
+            android:visibility="gone"
+            android:layout_below="@+id/r_mutu"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/r_perhitungan"
+            android:text="r_perhitungan"
+            android:visibility="gone"
+            android:layout_below="@+id/r_biaya"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/r_capaian"
+            android:text="r_capaian"
+            android:visibility="gone"
+            android:layout_below="@+id/r_perhitungan"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_Action.Profile_Action">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/tool"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="PROFILE LENGKAP"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"></TextView>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:visibility="visible"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:padding="10dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/nip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NIP" />
+
+                <TextView
+                    android:id="@+id/nip_profile"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="198512052015032001" />
+
+                <TextView
+                    android:id="@+id/ttl"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TTL" />
+
+                <TextView
+                    android:id="@+id/ttl_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="SORONG, 05-12-1985" />
+
+                <TextView
+                    android:id="@+id/no_telp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NO TELP" />
+
+                <TextView
+                    android:id="@+id/notelp_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="081234567890" />
+
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="EMAIL" />
+
+                <TextView
+                    android:id="@+id/email_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Staff@gmail.com" />
+
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ALAMAT" />
+
+                <TextView
+                    android:id="@+id/alamat_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Malang" />
+
+
+                <TextView
+                    android:id="@+id/golongan"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="GOLONGAN" />
+
+                <TextView
+                    android:id="@+id/nama_golongan_profile"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="II/a" />
+
+
+                <TextView
+                    android:id="@+id/atasan"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ATASAN LANGSUNG" />
+
+                <TextView
+                    android:id="@+id/jabatan_penilai_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="KEPALA SUB BIDANG DATA DAN INFORMASI" />
+
+
+                <TextView
+                    android:id="@+id/namaatasan"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NAMA ATASAN" />
+
+                <TextView
+                    android:id="@+id/nama_penilai_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="RONALD YUNUS NOYA, S.SI." />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
